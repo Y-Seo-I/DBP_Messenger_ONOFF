@@ -1,48 +1,40 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.IO;
-using System.Security.Cryptography;
+using System.Windows.Forms;
 
-namespace DB_SNS
+namespace on_off_proj
 {
     public partial class signIn : Form
     {
         public signIn()
         {
             InitializeComponent();
-            
             setUp();
         }
-        string strconn = "Server=27.96.130.41;Database=s5727722;Uid=s5727722;Pwd=s5727722";
+        string myConnection = connection.connect();
 
         private void button_login_Click(object sender, EventArgs e)
-        {
-            BinaryWriter brChecked = new BinaryWriter(new FileStream("setting.stu", FileMode.OpenOrCreate));
+        {   
 
-            using (MySqlConnection conn = new MySqlConnection(strconn))
+            using (MySqlConnection connection = new MySqlConnection(myConnection))
             {
-                conn.Open();
+                connection.Open();
                 
                 string login_id = textBox_id.Text;
                 string login_pw = textBox_pw.Text;
 
-                string query = "SELECT * FROM SNS WHERE USERID = '"+login_id+"'";
-                MySqlCommand cmd = new MySqlCommand(query, conn);
+                DBManager.GetInstance().setUserId(login_id);
+
+                string query = "SELECT * FROM on_off WHERE ID = '"+login_id+"'"; //아이디 기준으로 데이터를 가져옴
+                MySqlCommand cmd = new MySqlCommand(query, connection);
                 MySqlDataReader rdr = cmd.ExecuteReader();
 
                 bool login = false;
                 while (rdr.Read())
                 {
-                    if(login_id == (string)rdr["USERID"] && login_pw == (string)rdr["USERPW"])
+                    string pw = AES.Decryption(rdr["PW"].ToString(), rdr["count"].ToString()); // 복호화 된 비밀번호
+                    if (login_pw == pw) //현재 입력된 비밀번호와 db에서 가져온 복호화된 비밀번호가 같은가?
                     {
                         login = true;
                     }
@@ -51,61 +43,64 @@ namespace DB_SNS
 
                 if (login)
                 {
-                    if (checkBox_Remember.Checked)
+                    using (StreamWriter writer = new StreamWriter("setting.txt")) // 아이디를 암호키로 사용하여 암호화
                     {
-                        brChecked.Write("Remember_Account=true");
-                        brChecked.Write("ID="+textBox_id.Text);
-                        brChecked.Write("PW="+Encrypt.encryptAES128(textBox_pw.Text));
-                    }
-                    else
-                    {
-                        brChecked.Write("Remember_Account=false");
+                        if (checkBox_Remember.Checked)
+                        {
+                                writer.WriteLine("True");
+                                writer.WriteLine(textBox_id.Text);
+                                writer.WriteLine(AES.Encryption(textBox_pw.Text, textBox_id.Text));
+                        }
+                        else
+                        {
+                                writer.WriteLine("Fasle");
+                                
+                        }
+                        writer.Close();
                     }
                     MessageBox.Show("LOGIN SUCCESS");
+                    ClientData.ID = login_id;
                     this.Visible = false;
-                    changeData change = new changeData(login_id, login_pw);
-                    change.ShowDialog();
+
+                    FriendList list = new FriendList();
+                    list.ShowDialog();
                     
                 }
                 else
                 {
                     MessageBox.Show("LOGIN FAILED");
                 }
-                brChecked.Close();
             }
         }
         
         public void setUp()
         {
-            BinaryReader brChecked = new BinaryReader(new FileStream("setting.stu", FileMode.OpenOrCreate));
+            string checkbox_checked = "";
             try
             {
-                string check = brChecked.ReadString();
-
-                if (check.Substring(17) == "false")
+                using (StreamReader file_read = new StreamReader("setting.txt"))
                 {
-                    return;
-                }
-                else if (check.Substring(17) == "true")
-                {
-                    string id = brChecked.ReadString();
-                    string pw = brChecked.ReadString();
+                    checkbox_checked = file_read.ReadLine();
+                    if (checkbox_checked == "True")
+                    {
+                        checkBox_Remember.Checked = true;
+                        string id = file_read.ReadLine();
+                        string pw = AES.Decryption(file_read.ReadLine(), id);
 
-                    checkBox_Remember.Checked = true;
-                    textBox_id.Text = id.Substring(3);
-                    textBox_pw.Text = Encrypt.decryptAES128(pw.Substring(3));
+                        textBox_id.Text = id;
+                        textBox_pw.Text = pw;
+                        file_read.Close();
+                    }
+                    else
+                    {
+                        file_read.Close();
+                    }
                 }
             }
-            catch (EndOfStreamException)
+            catch(Exception e)
             {
-                return;
+                
             }
-            finally
-            {
-                brChecked.Close();
-            }
-           
-            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -116,6 +111,17 @@ namespace DB_SNS
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void singUpButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void singUpButton_Click_1(object sender, EventArgs e)
+        {
+            sign_up signup = new sign_up();
+            signup.ShowDialog();
         }
     }
 }

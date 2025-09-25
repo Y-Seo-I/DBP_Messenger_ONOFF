@@ -2,8 +2,6 @@
 using System;
 using System.Windows.Forms;
 using System.IO;
-using System.Drawing;
-using System.Drawing.Drawing2D;
 
 namespace on_off_proj
 {
@@ -14,10 +12,9 @@ namespace on_off_proj
             InitializeComponent();
         }
 
-
         private void button_sing_up_save_Click(object sender, EventArgs e)
         {
-            string myConnection = "Server=27.96.130.41;Port=3306;Database=s5671252;Uid=s5671252;Pwd=s5671252";
+            string myConnection = connection.connect();
             using (MySqlConnection connection = new MySqlConnection(myConnection))
             {
                 connection.Open();
@@ -28,7 +25,7 @@ namespace on_off_proj
 
                 try//예외 처리
                 {
-                    string Query = "SELECT * FROM on_off";
+                    string Query = "SELECT * FROM DBP.on_off";
 
                     MySqlCommand mySqlCommand = new MySqlCommand(Query, connection);
                     MySqlDataReader mySqlDataReader = mySqlCommand.ExecuteReader();
@@ -50,13 +47,13 @@ namespace on_off_proj
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine("실패");
-                    Console.WriteLine(ex.ToString());
+                    MessageBox.Show(ex.Message);
                 }
 
                 //비밀번호 암호화
                 string pw = AES.Encryption(textBox_sign_up_PW.Text, count.ToString());
 
+                Console.WriteLine(count);
                 //이미지파일 바이트단위저장
                 byte[] IMG = null;
                 if (textBox_sign_up_image_path.Text != "")
@@ -67,9 +64,10 @@ namespace on_off_proj
 
 
                 //회원가입
-                string insertQuery = "INSERT INTO on_off(ID, PW, 이름, 주소, 별명, 프로필사진)" +
+                string insertQuery = "INSERT INTO DBP.on_off(ID, PW, 이름, 우편번호, 주소, 상세주소, 별명, 프로필사진)" +
                    "VALUES('" + this.textBox_sign_up_ID.Text + "','" + pw + "','" + this.textBox_sign_up_Name.Text + "','"
-                   + this.textBox_sign_up_Address.Text + "','" + this.textBox_sign_up_Nickname.Text + "',@IMG)";
+                   + this.textBox_sign_up_Address_1.Text + "','" + this.textBox_sign_up_Address_2.Text + "','" + this.textBox_sign_up_Address_3.Text + "','"
+                   + this.textBox_sign_up_Nickname.Text + "',@IMG)";
                 try
                 {
                     MySqlCommand mySqlInsertCommand = new MySqlCommand(insertQuery, connection);
@@ -80,23 +78,37 @@ namespace on_off_proj
                     if (ID_check == true)
                     {
                         mySqlInsertCommand.ExecuteNonQuery();
+
                     }
+                    else return;
 
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(ex.ToString());
+                    MessageBox.Show(ex.Message);
                 }
 
             }
+            this.Close();
         }
 
-            private void pictureBox_sign_up_Click(object sender, EventArgs e)
+        private void button_Address_Click(object sender, EventArgs e)
+        {
+            address frm = new address();
+            frm.ShowDialog();
+
+            // 창이 닫히면 반환값을 반환한다.
+            if (frm.gstrZipCode != "")
+            {
+                textBox_sign_up_Address_1.Text = frm.gstrZipCode;
+                textBox_sign_up_Address_2.Text = frm.gstrAddress1;
+            }
+        }
+
+        private void pictureBox_sign_up_Click(object sender, EventArgs e)
         {
             OpenFileDialog dig = new OpenFileDialog();
             dig.Filter = "JPG Files(*.jpg)|*.jpg|PNG Files(*.png)|*.png|All Files(*.*)|*.*";
-
-
 
             if (dig.ShowDialog() == DialogResult.OK)
             {
@@ -105,47 +117,7 @@ namespace on_off_proj
                 pictureBox_sign_up.ImageLocation = picLoc;
 
 
-
             }
-
         }
-
-        private void textBox_sign_up_ID_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox_sign_up_PW_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox_sign_up_Name_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void sign_up_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-
-        
     }
 }

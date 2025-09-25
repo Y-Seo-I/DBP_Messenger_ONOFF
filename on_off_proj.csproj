@@ -51,15 +51,21 @@
     <Reference Include="MySql.Data, Version=8.0.27.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>packages\MySql.Data.8.0.27\lib\net452\MySql.Data.dll</HintPath>
     </Reference>
+    <Reference Include="Prism, Version=8.1.97.5141, Culture=neutral, PublicKeyToken=40ee6c3a2184dc59, processorArchitecture=MSIL">
+      <HintPath>packages\Prism.Core.8.1.97\lib\net47\Prism.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Management" />
     <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
@@ -71,6 +77,8 @@
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -81,6 +89,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Tulpep.NotificationWindow, Version=1.1.38.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Tulpep.NotificationWindow.1.1.38\lib\net40\Tulpep.NotificationWindow.dll</HintPath>
+    </Reference>
     <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>packages\MySql.Data.8.0.27\lib\net452\Ubiety.Dns.Core.dll</HintPath>
     </Reference>
@@ -89,33 +100,294 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="address.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="address.Designer.cs">
+      <DependentUpon>address.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_FriendForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_FriendForm.Designer.cs">
+      <DependentUpon>add_FriendForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AES.cs" />
+    <Compile Include="bgcForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bgcForm.Designer.cs">
+      <DependentUpon>bgcForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changeData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changeData.Designer.cs">
+      <DependentUpon>changeData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changeMemInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changeMemInfo.Designer.cs">
+      <DependentUpon>changeMemInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatItems\inCommImo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChatItems\inCommImo.Designer.cs">
+      <DependentUpon>inCommImo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatItems\inComming.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChatItems\inComming.Designer.cs">
+      <DependentUpon>inComming.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatItems\outGoImo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChatItems\outGoImo.Designer.cs">
+      <DependentUpon>outGoImo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatItems\outGoing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChatItems\outGoing.Designer.cs">
+      <DependentUpon>outGoing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatList.Designer.cs">
+      <DependentUpon>ChatList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chattingRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chattingRoom.Designer.cs">
+      <DependentUpon>chattingRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientData.cs" />
+    <Compile Include="connection.cs" />
+    <Compile Include="DBManager.cs" />
+    <Compile Include="delete_FriendForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete_FriendForm.Designer.cs">
+      <DependentUpon>delete_FriendForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Encrypt.cs" />
+    <Compile Include="Friend.cs" />
+    <Compile Include="FriendList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FriendList.Designer.cs">
+      <DependentUpon>FriendList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FriendListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FriendListItem.Designer.cs">
+      <DependentUpon>FriendListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="groupBoxBorder.cs" />
     <Compile Include="imageBt.cs" />
+    <Compile Include="imForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="imForm.Designer.cs">
+      <DependentUpon>imForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="insert_FriendForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insert_FriendForm.Designer.cs">
+      <DependentUpon>insert_FriendForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="recommend_Friend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recommend_Friend.Designer.cs">
+      <DependentUpon>recommend_Friend.cs</DependentUpon>
+    </Compile>
     <Compile Include="RoundPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="saveFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="saveFile.Designer.cs">
+      <DependentUpon>saveFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="server.cs" />
+    <Compile Include="signIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signIn.Designer.cs">
+      <DependentUpon>signIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sign_up.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="sign_up.Designer.cs">
       <DependentUpon>sign_up.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils.cs" />
+    <EmbeddedResource Include="address.resx">
+      <DependentUpon>address.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_FriendForm.resx">
+      <DependentUpon>add_FriendForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bgcForm.resx">
+      <DependentUpon>bgcForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changeData.resx">
+      <DependentUpon>changeData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changeMemInfo.resx">
+      <DependentUpon>changeMemInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatItems\inCommImo.resx">
+      <DependentUpon>inCommImo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatItems\inComming.resx">
+      <DependentUpon>inComming.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatItems\outGoImo.resx">
+      <DependentUpon>outGoImo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatItems\outGoing.resx">
+      <DependentUpon>outGoing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatList.resx">
+      <DependentUpon>ChatList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chattingRoom.resx">
+      <DependentUpon>chattingRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete_FriendForm.resx">
+      <DependentUpon>delete_FriendForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FriendList.resx">
+      <DependentUpon>FriendList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FriendListItem.resx">
+      <DependentUpon>FriendListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="imForm.resx">
+      <DependentUpon>imForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insert_FriendForm.resx">
+      <DependentUpon>insert_FriendForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+    <EmbeddedResource Include="recommend_Friend.resx">
+      <DependentUpon>recommend_Friend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="saveFile.resx">
+      <DependentUpon>saveFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signIn.resx">
+      <DependentUpon>signIn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="sign_up.resx">
       <DependentUpon>sign_up.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-merge-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\main" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\objects\pack\pack-9ae6802863dfcf56cc6e96da46577ce6c2c945b7.idx" />
+    <None Include=".git\objects\pack\pack-9ae6802863dfcf56cc6e96da46577ce6c2c945b7.pack" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\main" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include=".vs\DBP-Messenger\v16\.suo" />
+    <None Include=".vs\DBP_\v16\.suo" />
+    <None Include=".vs\DB_SNS\v16\.suo" />
+    <None Include=".vs\on_off_proj\v16\.suo" />
+    <None Include=".vs\ProjectSettings.json" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="bin\Debug\DB_SNS.exe.config" />
+    <None Include="bin\Debug\on_off_proj.exe.config" />
+    <None Include="bin\Debug\setting.stu" />
+    <None Include="bin\Debug\setting1.stu" />
+    <None Include="bin\Release\on_off_proj.exe.config" />
     <None Include="packages.config" />
+    <None Include="packages\BouncyCastle.1.8.5\.signature.p7s" />
+    <None Include="packages\BouncyCastle.1.8.5\BouncyCastle.1.8.5.nupkg" />
+    <None Include="packages\BouncyCastle.1.8.5\README.md" />
+    <None Include="packages\Google.Protobuf.3.14.0\.signature.p7s" />
+    <None Include="packages\Google.Protobuf.3.14.0\Google.Protobuf.3.14.0.nupkg" />
+    <None Include="packages\K4os.Compression.LZ4.1.2.6\.signature.p7s" />
+    <None Include="packages\K4os.Compression.LZ4.1.2.6\K4os.Compression.LZ4.1.2.6.nupkg" />
+    <None Include="packages\K4os.Compression.LZ4.Streams.1.2.6\.signature.p7s" />
+    <None Include="packages\K4os.Compression.LZ4.Streams.1.2.6\K4os.Compression.LZ4.Streams.1.2.6.nupkg" />
+    <None Include="packages\K4os.Hash.xxHash.1.0.6\.signature.p7s" />
+    <None Include="packages\K4os.Hash.xxHash.1.0.6\K4os.Hash.xxHash.1.0.6.nupkg" />
+    <None Include="packages\MySql.Data.8.0.27\.signature.p7s" />
+    <None Include="packages\MySql.Data.8.0.27\MySql.Data.8.0.27.nupkg" />
+    <None Include="packages\System.Buffers.4.5.1\.signature.p7s" />
+    <None Include="packages\System.Buffers.4.5.1\lib\netcoreapp2.0\_._" />
+    <None Include="packages\System.Buffers.4.5.1\lib\uap10.0.16299\_._" />
+    <None Include="packages\System.Buffers.4.5.1\ref\netcoreapp2.0\_._" />
+    <None Include="packages\System.Buffers.4.5.1\ref\uap10.0.16299\_._" />
+    <None Include="packages\System.Buffers.4.5.1\System.Buffers.4.5.1.nupkg" />
+    <None Include="packages\System.Memory.4.5.4\.signature.p7s" />
+    <None Include="packages\System.Memory.4.5.4\lib\netcoreapp2.1\_._" />
+    <None Include="packages\System.Memory.4.5.4\ref\netcoreapp2.1\_._" />
+    <None Include="packages\System.Memory.4.5.4\System.Memory.4.5.4.nupkg" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\.signature.p7s" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\lib\MonoAndroid10\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\lib\MonoTouch10\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\lib\netcoreapp2.0\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\lib\uap10.0.16299\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\lib\xamarinios10\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\lib\xamarinmac20\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\lib\xamarintvos10\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\lib\xamarinwatchos10\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\ref\MonoAndroid10\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\ref\MonoTouch10\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\ref\netcoreapp2.0\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\ref\uap10.0.16299\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\ref\xamarinios10\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\ref\xamarinmac20\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\ref\xamarintvos10\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\ref\xamarinwatchos10\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\System.Numerics.Vectors.4.5.0.nupkg" />
+    <None Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\.signature.p7s" />
+    <None Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\System.Runtime.CompilerServices.Unsafe.5.0.0.nupkg" />
+    <None Include="packages\WindowsAPICodePack-Core.1.1.2\.signature.p7s" />
+    <None Include="packages\WindowsAPICodePack-Core.1.1.2\WindowsAPICodePack-Core.1.1.2.nupkg" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -130,10 +402,227 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\유튜브_기본프로필_하늘색.jpg" />
+    <EmbeddedResource Include="Resources\유튜브_기본프로필_하늘색.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\profile.jpg" />
+    <Content Include=".git\ms-persist.xml" />
+    <Content Include="bin\Debug\BouncyCastle.Crypto.dll" />
+    <Content Include="bin\Debug\DB_SNS.exe" />
+    <Content Include="bin\Debug\DB_SNS.pdb" />
+    <Content Include="bin\Debug\Google.Protobuf.dll" />
+    <Content Include="bin\Debug\Google.Protobuf.pdb" />
+    <Content Include="bin\Debug\Google.Protobuf.xml" />
+    <Content Include="bin\Debug\K4os.Compression.LZ4.dll" />
+    <Content Include="bin\Debug\K4os.Compression.LZ4.Streams.dll" />
+    <Content Include="bin\Debug\K4os.Compression.LZ4.Streams.xml" />
+    <Content Include="bin\Debug\K4os.Compression.LZ4.xml" />
+    <Content Include="bin\Debug\K4os.Hash.xxHash.dll" />
+    <Content Include="bin\Debug\K4os.Hash.xxHash.xml" />
+    <Content Include="bin\Debug\Microsoft.WindowsAPICodePack.dll" />
+    <Content Include="bin\Debug\Microsoft.WindowsAPICodePack.xml" />
+    <Content Include="bin\Debug\MySql.Data.dll" />
+    <Content Include="bin\Debug\MySql.Data.xml" />
+    <Content Include="bin\Debug\newfile.jpeg" />
+    <Content Include="bin\Debug\newfile.png" />
+    <Content Include="bin\Debug\on_off_proj.exe" />
+    <Content Include="bin\Debug\on_off_proj.pdb" />
+    <Content Include="bin\Debug\Prism.dll" />
+    <Content Include="bin\Debug\Prism.pdb" />
+    <Content Include="bin\Debug\Prism.xml" />
+    <Content Include="bin\Debug\System.Buffers.dll" />
+    <Content Include="bin\Debug\System.Buffers.xml" />
+    <Content Include="bin\Debug\System.Memory.dll" />
+    <Content Include="bin\Debug\System.Memory.xml" />
+    <Content Include="bin\Debug\System.Numerics.Vectors.dll" />
+    <Content Include="bin\Debug\System.Numerics.Vectors.xml" />
+    <Content Include="bin\Debug\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="bin\Debug\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="bin\Debug\Ubiety.Dns.Core.dll" />
+    <Content Include="bin\Debug\ZstdNet.dll" />
+    <Content Include="bin\Release\BouncyCastle.Crypto.dll" />
+    <Content Include="bin\Release\Google.Protobuf.dll" />
+    <Content Include="bin\Release\K4os.Compression.LZ4.dll" />
+    <Content Include="bin\Release\K4os.Compression.LZ4.Streams.dll" />
+    <Content Include="bin\Release\K4os.Hash.xxHash.dll" />
+    <Content Include="bin\Release\MySql.Data.dll" />
+    <Content Include="bin\Release\on_off_proj.exe" />
+    <Content Include="bin\Release\on_off_proj.pdb" />
+    <Content Include="bin\Release\Prism.dll" />
+    <Content Include="bin\Release\Prism.pdb" />
+    <Content Include="bin\Release\Prism.xml" />
+    <Content Include="bin\Release\System.Buffers.dll" />
+    <Content Include="bin\Release\System.Memory.dll" />
+    <Content Include="bin\Release\System.Numerics.Vectors.dll" />
+    <Content Include="bin\Release\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="bin\Release\Ubiety.Dns.Core.dll" />
+    <Content Include="bin\Release\ZstdNet.dll" />
+    <Content Include="packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll" />
+    <Content Include="packages\Google.Protobuf.3.14.0\lib\net45\Google.Protobuf.dll" />
+    <Content Include="packages\Google.Protobuf.3.14.0\lib\net45\Google.Protobuf.pdb" />
+    <Content Include="packages\Google.Protobuf.3.14.0\lib\net45\Google.Protobuf.xml" />
+    <Content Include="packages\Google.Protobuf.3.14.0\lib\netstandard1.1\Google.Protobuf.dll" />
+    <Content Include="packages\Google.Protobuf.3.14.0\lib\netstandard1.1\Google.Protobuf.pdb" />
+    <Content Include="packages\Google.Protobuf.3.14.0\lib\netstandard1.1\Google.Protobuf.xml" />
+    <Content Include="packages\Google.Protobuf.3.14.0\lib\netstandard2.0\Google.Protobuf.dll" />
+    <Content Include="packages\Google.Protobuf.3.14.0\lib\netstandard2.0\Google.Protobuf.pdb" />
+    <Content Include="packages\Google.Protobuf.3.14.0\lib\netstandard2.0\Google.Protobuf.xml" />
+    <Content Include="packages\K4os.Compression.LZ4.1.2.6\lib\net45\K4os.Compression.LZ4.dll" />
+    <Content Include="packages\K4os.Compression.LZ4.1.2.6\lib\net45\K4os.Compression.LZ4.xml" />
+    <Content Include="packages\K4os.Compression.LZ4.1.2.6\lib\net46\K4os.Compression.LZ4.dll" />
+    <Content Include="packages\K4os.Compression.LZ4.1.2.6\lib\net46\K4os.Compression.LZ4.xml" />
+    <Content Include="packages\K4os.Compression.LZ4.1.2.6\lib\netstandard1.6\K4os.Compression.LZ4.dll" />
+    <Content Include="packages\K4os.Compression.LZ4.1.2.6\lib\netstandard1.6\K4os.Compression.LZ4.xml" />
+    <Content Include="packages\K4os.Compression.LZ4.1.2.6\lib\netstandard2.0\K4os.Compression.LZ4.dll" />
+    <Content Include="packages\K4os.Compression.LZ4.1.2.6\lib\netstandard2.0\K4os.Compression.LZ4.xml" />
+    <Content Include="packages\K4os.Compression.LZ4.Streams.1.2.6\lib\net45\K4os.Compression.LZ4.Streams.dll" />
+    <Content Include="packages\K4os.Compression.LZ4.Streams.1.2.6\lib\net45\K4os.Compression.LZ4.Streams.xml" />
+    <Content Include="packages\K4os.Compression.LZ4.Streams.1.2.6\lib\net46\K4os.Compression.LZ4.Streams.dll" />
+    <Content Include="packages\K4os.Compression.LZ4.Streams.1.2.6\lib\net46\K4os.Compression.LZ4.Streams.xml" />
+    <Content Include="packages\K4os.Compression.LZ4.Streams.1.2.6\lib\netstandard1.6\K4os.Compression.LZ4.Streams.dll" />
+    <Content Include="packages\K4os.Compression.LZ4.Streams.1.2.6\lib\netstandard1.6\K4os.Compression.LZ4.Streams.xml" />
+    <Content Include="packages\K4os.Compression.LZ4.Streams.1.2.6\lib\netstandard2.0\K4os.Compression.LZ4.Streams.dll" />
+    <Content Include="packages\K4os.Compression.LZ4.Streams.1.2.6\lib\netstandard2.0\K4os.Compression.LZ4.Streams.xml" />
+    <Content Include="packages\K4os.Compression.LZ4.Streams.1.2.6\lib\netstandard2.1\K4os.Compression.LZ4.Streams.dll" />
+    <Content Include="packages\K4os.Compression.LZ4.Streams.1.2.6\lib\netstandard2.1\K4os.Compression.LZ4.Streams.xml" />
+    <Content Include="packages\K4os.Hash.xxHash.1.0.6\lib\net45\K4os.Hash.xxHash.dll" />
+    <Content Include="packages\K4os.Hash.xxHash.1.0.6\lib\net45\K4os.Hash.xxHash.xml" />
+    <Content Include="packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll" />
+    <Content Include="packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.xml" />
+    <Content Include="packages\K4os.Hash.xxHash.1.0.6\lib\netstandard1.6\K4os.Hash.xxHash.dll" />
+    <Content Include="packages\K4os.Hash.xxHash.1.0.6\lib\netstandard1.6\K4os.Hash.xxHash.xml" />
+    <Content Include="packages\K4os.Hash.xxHash.1.0.6\lib\netstandard2.0\K4os.Hash.xxHash.dll" />
+    <Content Include="packages\K4os.Hash.xxHash.1.0.6\lib\netstandard2.0\K4os.Hash.xxHash.xml" />
+    <Content Include="packages\MySql.Data.8.0.27\lib\net452\MySql.Data.dll" />
+    <Content Include="packages\MySql.Data.8.0.27\lib\net452\MySql.Data.xml" />
+    <Content Include="packages\MySql.Data.8.0.27\lib\net452\Ubiety.Dns.Core.dll" />
+    <Content Include="packages\MySql.Data.8.0.27\lib\net452\ZstdNet.dll" />
+    <Content Include="packages\MySql.Data.8.0.27\lib\net48\MySql.Data.dll" />
+    <Content Include="packages\MySql.Data.8.0.27\lib\net48\MySql.Data.xml" />
+    <Content Include="packages\MySql.Data.8.0.27\lib\net48\Ubiety.Dns.Core.dll" />
+    <Content Include="packages\MySql.Data.8.0.27\lib\net48\ZstdNet.dll" />
+    <Content Include="packages\MySql.Data.8.0.27\lib\net5.0\MySql.Data.dll" />
+    <Content Include="packages\MySql.Data.8.0.27\lib\net5.0\MySql.Data.xml" />
+    <Content Include="packages\MySql.Data.8.0.27\lib\net5.0\Ubiety.Dns.Core.dll" />
+    <Content Include="packages\MySql.Data.8.0.27\lib\net5.0\ZstdNet.dll" />
+    <Content Include="packages\MySql.Data.8.0.27\lib\netstandard2.0\MySql.Data.dll" />
+    <Content Include="packages\MySql.Data.8.0.27\lib\netstandard2.0\MySql.Data.xml" />
+    <Content Include="packages\MySql.Data.8.0.27\lib\netstandard2.0\Ubiety.Dns.Core.dll" />
+    <Content Include="packages\MySql.Data.8.0.27\lib\netstandard2.0\ZstdNet.dll" />
+    <Content Include="packages\MySql.Data.8.0.27\lib\netstandard2.1\MySql.Data.dll" />
+    <Content Include="packages\MySql.Data.8.0.27\lib\netstandard2.1\MySql.Data.xml" />
+    <Content Include="packages\MySql.Data.8.0.27\lib\netstandard2.1\Ubiety.Dns.Core.dll" />
+    <Content Include="packages\MySql.Data.8.0.27\lib\netstandard2.1\ZstdNet.dll" />
+    <Content Include="packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll" />
+    <Content Include="packages\System.Buffers.4.5.1\lib\net461\System.Buffers.xml" />
+    <Content Include="packages\System.Buffers.4.5.1\lib\netstandard1.1\System.Buffers.dll" />
+    <Content Include="packages\System.Buffers.4.5.1\lib\netstandard1.1\System.Buffers.xml" />
+    <Content Include="packages\System.Buffers.4.5.1\lib\netstandard2.0\System.Buffers.dll" />
+    <Content Include="packages\System.Buffers.4.5.1\lib\netstandard2.0\System.Buffers.xml" />
+    <Content Include="packages\System.Buffers.4.5.1\LICENSE.TXT" />
+    <Content Include="packages\System.Buffers.4.5.1\ref\net45\System.Buffers.dll" />
+    <Content Include="packages\System.Buffers.4.5.1\ref\net45\System.Buffers.xml" />
+    <Content Include="packages\System.Buffers.4.5.1\ref\netstandard1.1\System.Buffers.dll" />
+    <Content Include="packages\System.Buffers.4.5.1\ref\netstandard1.1\System.Buffers.xml" />
+    <Content Include="packages\System.Buffers.4.5.1\ref\netstandard2.0\System.Buffers.dll" />
+    <Content Include="packages\System.Buffers.4.5.1\ref\netstandard2.0\System.Buffers.xml" />
+    <Content Include="packages\System.Buffers.4.5.1\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.Buffers.4.5.1\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.Buffers.4.5.1\version.txt" />
+    <Content Include="packages\System.Memory.4.5.4\lib\net461\System.Memory.dll" />
+    <Content Include="packages\System.Memory.4.5.4\lib\net461\System.Memory.xml" />
+    <Content Include="packages\System.Memory.4.5.4\lib\netstandard1.1\System.Memory.dll" />
+    <Content Include="packages\System.Memory.4.5.4\lib\netstandard1.1\System.Memory.xml" />
+    <Content Include="packages\System.Memory.4.5.4\lib\netstandard2.0\System.Memory.dll" />
+    <Content Include="packages\System.Memory.4.5.4\lib\netstandard2.0\System.Memory.xml" />
+    <Content Include="packages\System.Memory.4.5.4\LICENSE.TXT" />
+    <Content Include="packages\System.Memory.4.5.4\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.Memory.4.5.4\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.Memory.4.5.4\version.txt" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\netstandard1.0\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\netstandard1.0\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\netstandard2.0\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\netstandard2.0\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\portable-net45+win8+wp8+wpa81\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\portable-net45+win8+wp8+wpa81\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\LICENSE.TXT" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\net45\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\net45\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\net46\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\net46\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\netstandard1.0\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\netstandard1.0\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\netstandard2.0\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\netstandard2.0\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\version.txt" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\Icon.png" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\netcoreapp2.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\netcoreapp2.0\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\LICENSE.TXT" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\ref\net461\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\ref\net461\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\ref\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\ref\netstandard1.0\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\ref\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\ref\netstandard2.0\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\ref\netstandard2.1\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\ref\netstandard2.1\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.5.0.0\version.txt" />
+    <Content Include="packages\WindowsAPICodePack-Core.1.1.2\lib\Microsoft.WindowsAPICodePack.dll" />
+    <Content Include="packages\WindowsAPICodePack-Core.1.1.2\lib\Microsoft.WindowsAPICodePack.xml" />
+    <None Include="Resources\send2.png" />
+    <None Include="Resources\send3.png" />
+    <None Include="Resources\Tabuser1.png" />
+    <None Include="Resources\TabChatting1.png" />
+    <None Include="Resources\chatting.png" />
+    <None Include="Resources\chattingq.JPG" />
+    <Content Include="Resources\설정.jpg" />
+    <None Include="Resources\search_icon.png" />
+    <None Include="README.md" />
+    <None Include="Resources\imoji\imoji6.png" />
+    <None Include="Resources\imoji\imoji5.png" />
+    <None Include="Resources\imoji\imoji4.png" />
+    <None Include="Resources\imoji\imoji3.png" />
+    <None Include="Resources\imoji\imoji2.png" />
+    <None Include="Resources\imoji\imoji1.png" />
+    <None Include="Resources\imoji1.bmp" />
+    <None Include="Resources\send.png" />
+    <None Include="Resources\emoji.png" />
+    <None Include="Resources\folder.png" />
+    <None Include="Resources\alram.png" />
+    <None Include="Resources\TabSetting.png" />
+    <None Include="Resources\TabFrineds.png" />
+    <None Include="Resources\TabChatting.png" />
+    <None Include="Resources\Tabuser.png" />
+    <None Include="Resources\user.png" />
+    <EmbeddedResource Include="Resources\background.png" />
+    <EmbeddedResource Include="Resources\ID_Pass6.png" />
+    <EmbeddedResource Include="Resources\onoff.png" />
+    <EmbeddedResource Include="Resources\onofff.png" />
+    <EmbeddedResource Include="Resources\plz.png" />
+    <EmbeddedResource Include="Resources\profile.jpg" />
+    <EmbeddedResource Include="Resources\white.png" />
+    <EmbeddedResource Include="Resources\배경.png" />
+    <EmbeddedResource Include="Resources\배경1.png" />
+    <EmbeddedResource Include="Resources\사진.png" />
+    <EmbeddedResource Include="Resources\온오프프.png" />
+    <EmbeddedResource Include="Resources\온오프프1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include=".vs\DBP_Messenger\v16\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

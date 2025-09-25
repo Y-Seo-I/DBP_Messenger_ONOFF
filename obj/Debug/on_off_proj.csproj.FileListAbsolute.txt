@@ -100,28 +100,6 @@ C:\Users\CHANGHWAN\source\repos\DBP-Messenger\obj\Debug\on_off_proj.pdb
 C:\Users\user\Source\Repos\DBP_Messenger\bin\Debug\on_off_proj.exe.config
 C:\Users\user\Source\Repos\DBP_Messenger\bin\Debug\on_off_proj.exe
 C:\Users\user\Source\Repos\DBP_Messenger\bin\Debug\on_off_proj.pdb
-C:\Users\user\Source\Repos\DBP_Messenger\bin\Debug\BouncyCastle.Crypto.dll
-C:\Users\user\Source\Repos\DBP_Messenger\bin\Debug\Google.Protobuf.dll
-C:\Users\user\Source\Repos\DBP_Messenger\bin\Debug\K4os.Compression.LZ4.dll
-C:\Users\user\Source\Repos\DBP_Messenger\bin\Debug\K4os.Compression.LZ4.Streams.dll
-C:\Users\user\Source\Repos\DBP_Messenger\bin\Debug\K4os.Hash.xxHash.dll
-C:\Users\user\Source\Repos\DBP_Messenger\bin\Debug\MySql.Data.dll
-C:\Users\user\Source\Repos\DBP_Messenger\bin\Debug\System.Buffers.dll
-C:\Users\user\Source\Repos\DBP_Messenger\bin\Debug\System.Memory.dll
-C:\Users\user\Source\Repos\DBP_Messenger\bin\Debug\System.Numerics.Vectors.dll
-C:\Users\user\Source\Repos\DBP_Messenger\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\user\Source\Repos\DBP_Messenger\bin\Debug\Ubiety.Dns.Core.dll
-C:\Users\user\Source\Repos\DBP_Messenger\bin\Debug\ZstdNet.dll
-C:\Users\user\Source\Repos\DBP_Messenger\bin\Debug\Google.Protobuf.pdb
-C:\Users\user\Source\Repos\DBP_Messenger\bin\Debug\Google.Protobuf.xml
-C:\Users\user\Source\Repos\DBP_Messenger\bin\Debug\K4os.Compression.LZ4.xml
-C:\Users\user\Source\Repos\DBP_Messenger\bin\Debug\K4os.Compression.LZ4.Streams.xml
-C:\Users\user\Source\Repos\DBP_Messenger\bin\Debug\K4os.Hash.xxHash.xml
-C:\Users\user\Source\Repos\DBP_Messenger\bin\Debug\MySql.Data.xml
-C:\Users\user\Source\Repos\DBP_Messenger\bin\Debug\System.Buffers.xml
-C:\Users\user\Source\Repos\DBP_Messenger\bin\Debug\System.Memory.xml
-C:\Users\user\Source\Repos\DBP_Messenger\bin\Debug\System.Numerics.Vectors.xml
-C:\Users\user\Source\Repos\DBP_Messenger\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\user\Source\Repos\DBP_Messenger\obj\Debug\on_off_proj.csproj.AssemblyReference.cache
 C:\Users\user\Source\Repos\DBP_Messenger\obj\Debug\on_off_proj.Properties.Resources.resources
 C:\Users\user\Source\Repos\DBP_Messenger\obj\Debug\on_off_proj.sign_up.resources
@@ -129,3 +107,173 @@ C:\Users\user\Source\Repos\DBP_Messenger\obj\Debug\on_off_proj.csproj.GenerateRe
 C:\Users\user\Source\Repos\DBP_Messenger\obj\Debug\on_off_proj.csproj.CoreCompileInputs.cache
 C:\Users\user\Source\Repos\DBP_Messenger\obj\Debug\on_off_proj.exe
 C:\Users\user\Source\Repos\DBP_Messenger\obj\Debug\on_off_proj.pdb
+C:\Users\to123\source\repos\DBP_Messenger\bin\Debug\on_off_proj.exe
+C:\Users\to123\source\repos\DBP_Messenger\bin\Debug\on_off_proj.exe.config
+C:\Users\to123\source\repos\DBP_Messenger\bin\Debug\Prism.dll
+C:\Users\to123\source\repos\DBP_Messenger\bin\Debug\Prism.pdb
+C:\Users\to123\source\repos\DBP_Messenger\bin\Debug\Prism.xml
+C:\Users\to123\source\repos\DBP_Messenger\obj\Debug\DB_SNS.changeData.resources
+C:\Users\to123\source\repos\DBP_Messenger\obj\Debug\on_off_proj.ChatItems.inComming.resources
+C:\Users\to123\source\repos\DBP_Messenger\obj\Debug\on_off_proj.ChatItems.outGoing.resources
+C:\Users\to123\source\repos\DBP_Messenger\obj\Debug\on_off_proj.ChatList.resources
+C:\Users\to123\source\repos\DBP_Messenger\obj\Debug\on_off_proj.chattingRoom.resources
+C:\Users\to123\source\repos\DBP_Messenger\obj\Debug\on_off_proj.Properties.Resources.resources
+C:\Users\to123\source\repos\DBP_Messenger\obj\Debug\DB_SNS.signIn.resources
+C:\Users\to123\source\repos\DBP_Messenger\obj\Debug\on_off_proj.sign_up.resources
+C:\Users\to123\source\repos\DBP_Messenger\obj\Debug\on_off_proj.csproj.GenerateResource.cache
+C:\Users\to123\source\repos\DBP_Messenger\obj\Debug\on_off_proj.csproj.CoreCompileInputs.cache
+C:\Users\to123\source\repos\DBP_Messenger\obj\Debug\on_off_proj.csproj.CopyComplete
+C:\Users\to123\source\repos\DBP_Messenger\obj\Debug\on_off_proj.exe
+C:\Users\to123\source\repos\DBP_Messenger\obj\Debug\on_off_proj.pdb
+C:\Users\to123\source\repos\DBP_Messenger\bin\Debug\on_off_proj.pdb
+C:\Users\to123\source\repos\DBP_Messenger\obj\Debug\on_off_proj.csprojAssemblyReference.cache
+C:\Users\to123\source\repos\DBP_Messenger\obj\Debug\on_off_proj.saveFile.resources
+C:\Users\user\source\repos\DBP_Messenger\bin\Debug\Prism.pdb
+C:\Users\user\source\repos\DBP_Messenger\bin\Debug\Prism.xml
+C:\Users\user\source\repos\DBP_Messenger\obj\Debug\on_off_proj.ChatItems.inComming.resources
+C:\Users\user\source\repos\DBP_Messenger\obj\Debug\on_off_proj.ChatItems.outGoing.resources
+C:\Users\user\source\repos\DBP_Messenger\obj\Debug\on_off_proj.ChatList.resources
+C:\Users\user\source\repos\DBP_Messenger\obj\Debug\on_off_proj.chattingRoom.resources
+C:\Users\user\source\repos\DBP_Messenger\obj\Debug\on_off_proj.saveFile.resources
+C:\Users\user\source\repos\DBP_Messenger\obj\Debug\on_off_proj.bgcForm.resources
+C:\Users\user\source\repos\DBP_Messenger\obj\Debug\on_off_proj.emojiForm.resources
+C:\Users\user\source\repos\DBP_Messenger\obj\Debug\on_off_proj.ChatItems.inCommImo.resources
+C:\Users\user\source\repos\DBP_Messenger\obj\Debug\on_off_proj.ChatItems.outGoImo.resources
+C:\Users\user\source\repos\DBP_Messenger\obj\Debug\on_off_proj.address.resources
+C:\Users\user\source\repos\DBP_Messenger\obj\Debug\on_off_proj.add_FriendForm.resources
+C:\Users\user\source\repos\DBP_Messenger\obj\Debug\on_off_proj.changeData.resources
+C:\Users\user\source\repos\DBP_Messenger\obj\Debug\on_off_proj.changeMemInfo.resources
+C:\Users\user\source\repos\DBP_Messenger\obj\Debug\on_off_proj.delete_FriendForm.resources
+C:\Users\user\source\repos\DBP_Messenger\obj\Debug\on_off_proj.FriendList.resources
+C:\Users\user\source\repos\DBP_Messenger\obj\Debug\on_off_proj.UserControl1.resources
+C:\Users\user\source\repos\DBP_Messenger\obj\Debug\on_off_proj.insert_FriendForm.resources
+C:\Users\user\source\repos\DBP_Messenger\obj\Debug\on_off_proj.recommend_Friend.resources
+C:\Users\user\source\repos\DBP_Messenger\obj\Debug\on_off_proj.signIn.resources
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\bin\Debug\on_off_proj.exe.config
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\bin\Debug\on_off_proj.exe
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\bin\Debug\on_off_proj.pdb
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\bin\Debug\Tulpep.NotificationWindow.dll
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\bin\Debug\Prism.pdb
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\bin\Debug\Prism.xml
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\obj\Debug\on_off_proj.csprojAssemblyReference.cache
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\obj\Debug\on_off_proj.address.resources
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\obj\Debug\on_off_proj.add_FriendForm.resources
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\obj\Debug\on_off_proj.bgcForm.resources
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\obj\Debug\on_off_proj.changeData.resources
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\obj\Debug\on_off_proj.changeMemInfo.resources
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\obj\Debug\on_off_proj.ChatItems.inCommImo.resources
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\obj\Debug\on_off_proj.ChatItems.inComming.resources
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\obj\Debug\on_off_proj.ChatItems.outGoImo.resources
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\obj\Debug\on_off_proj.ChatItems.outGoing.resources
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\obj\Debug\on_off_proj.ChatList.resources
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\obj\Debug\on_off_proj.chattingRoom.resources
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\obj\Debug\on_off_proj.delete_FriendForm.resources
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\obj\Debug\on_off_proj.FriendList.resources
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\obj\Debug\on_off_proj.UserControl1.resources
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\obj\Debug\on_off_proj.emojiForm.resources
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\obj\Debug\on_off_proj.insert_FriendForm.resources
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\obj\Debug\on_off_proj.Properties.Resources.resources
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\obj\Debug\on_off_proj.recommend_Friend.resources
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\obj\Debug\on_off_proj.saveFile.resources
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\obj\Debug\on_off_proj.signIn.resources
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\obj\Debug\on_off_proj.sign_up.resources
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\obj\Debug\on_off_proj.csproj.GenerateResource.cache
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\obj\Debug\on_off_proj.csproj.CoreCompileInputs.cache
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\obj\Debug\on_off_proj.csproj.CopyComplete
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\obj\Debug\on_off_proj.exe
+C:\Users\to123\OneDrive\Documents\카카오톡 받은 파일\DBP_Messenger\obj\Debug\on_off_proj.pdb
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\bin\Debug\on_off_proj.exe.config
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\bin\Debug\on_off_proj.exe
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\bin\Debug\on_off_proj.pdb
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\bin\Debug\Tulpep.NotificationWindow.dll
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\bin\Debug\Prism.pdb
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\bin\Debug\Prism.xml
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\obj\Debug\on_off_proj.csprojAssemblyReference.cache
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\obj\Debug\on_off_proj.address.resources
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\obj\Debug\on_off_proj.add_FriendForm.resources
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\obj\Debug\on_off_proj.bgcForm.resources
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\obj\Debug\on_off_proj.changeData.resources
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\obj\Debug\on_off_proj.changeMemInfo.resources
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\obj\Debug\on_off_proj.ChatItems.inCommImo.resources
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\obj\Debug\on_off_proj.ChatItems.inComming.resources
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\obj\Debug\on_off_proj.ChatItems.outGoImo.resources
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\obj\Debug\on_off_proj.ChatItems.outGoing.resources
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\obj\Debug\on_off_proj.ChatList.resources
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\obj\Debug\on_off_proj.chattingRoom.resources
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\obj\Debug\on_off_proj.delete_FriendForm.resources
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\obj\Debug\on_off_proj.FriendList.resources
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\obj\Debug\on_off_proj.UserControl1.resources
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\obj\Debug\on_off_proj.emojiForm.resources
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\obj\Debug\on_off_proj.insert_FriendForm.resources
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\obj\Debug\on_off_proj.Properties.Resources.resources
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\obj\Debug\on_off_proj.recommend_Friend.resources
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\obj\Debug\on_off_proj.saveFile.resources
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\obj\Debug\on_off_proj.signIn.resources
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\obj\Debug\on_off_proj.sign_up.resources
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\obj\Debug\on_off_proj.csproj.GenerateResource.cache
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\obj\Debug\on_off_proj.csproj.CoreCompileInputs.cache
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\obj\Debug\on_off_proj.csproj.CopyComplete
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\obj\Debug\on_off_proj.exe
+C:\Users\to123\OneDrive\바탕 화면\DBP_Messenger (3)\obj\Debug\on_off_proj.pdb
+C:\Users\to123\Downloads\DBP_Messenger (3)\bin\Debug\on_off_proj.exe.config
+C:\Users\to123\Downloads\DBP_Messenger (3)\bin\Debug\on_off_proj.exe
+C:\Users\to123\Downloads\DBP_Messenger (3)\bin\Debug\on_off_proj.pdb
+C:\Users\to123\Downloads\DBP_Messenger (3)\bin\Debug\Tulpep.NotificationWindow.dll
+C:\Users\to123\Downloads\DBP_Messenger (3)\obj\Debug\on_off_proj.csprojAssemblyReference.cache
+C:\Users\to123\Downloads\DBP_Messenger (3)\obj\Debug\on_off_proj.address.resources
+C:\Users\to123\Downloads\DBP_Messenger (3)\obj\Debug\on_off_proj.add_FriendForm.resources
+C:\Users\to123\Downloads\DBP_Messenger (3)\obj\Debug\on_off_proj.bgcForm.resources
+C:\Users\to123\Downloads\DBP_Messenger (3)\obj\Debug\on_off_proj.changeData.resources
+C:\Users\to123\Downloads\DBP_Messenger (3)\obj\Debug\on_off_proj.changeMemInfo.resources
+C:\Users\to123\Downloads\DBP_Messenger (3)\obj\Debug\on_off_proj.ChatItems.inCommImo.resources
+C:\Users\to123\Downloads\DBP_Messenger (3)\obj\Debug\on_off_proj.ChatItems.inComming.resources
+C:\Users\to123\Downloads\DBP_Messenger (3)\obj\Debug\on_off_proj.ChatItems.outGoImo.resources
+C:\Users\to123\Downloads\DBP_Messenger (3)\obj\Debug\on_off_proj.ChatItems.outGoing.resources
+C:\Users\to123\Downloads\DBP_Messenger (3)\obj\Debug\on_off_proj.ChatList.resources
+C:\Users\to123\Downloads\DBP_Messenger (3)\obj\Debug\on_off_proj.chattingRoom.resources
+C:\Users\to123\Downloads\DBP_Messenger (3)\obj\Debug\on_off_proj.delete_FriendForm.resources
+C:\Users\to123\Downloads\DBP_Messenger (3)\obj\Debug\on_off_proj.FriendList.resources
+C:\Users\to123\Downloads\DBP_Messenger (3)\obj\Debug\on_off_proj.UserControl1.resources
+C:\Users\to123\Downloads\DBP_Messenger (3)\obj\Debug\on_off_proj.emojiForm.resources
+C:\Users\to123\Downloads\DBP_Messenger (3)\obj\Debug\on_off_proj.insert_FriendForm.resources
+C:\Users\to123\Downloads\DBP_Messenger (3)\obj\Debug\on_off_proj.Properties.Resources.resources
+C:\Users\to123\Downloads\DBP_Messenger (3)\obj\Debug\on_off_proj.recommend_Friend.resources
+C:\Users\to123\Downloads\DBP_Messenger (3)\obj\Debug\on_off_proj.saveFile.resources
+C:\Users\to123\Downloads\DBP_Messenger (3)\obj\Debug\on_off_proj.signIn.resources
+C:\Users\to123\Downloads\DBP_Messenger (3)\obj\Debug\on_off_proj.sign_up.resources
+C:\Users\to123\Downloads\DBP_Messenger (3)\obj\Debug\on_off_proj.csproj.GenerateResource.cache
+C:\Users\to123\Downloads\DBP_Messenger (3)\obj\Debug\on_off_proj.csproj.CoreCompileInputs.cache
+C:\Users\to123\Downloads\DBP_Messenger (3)\obj\Debug\on_off_proj.csproj.CopyComplete
+C:\Users\to123\Downloads\DBP_Messenger (3)\obj\Debug\on_off_proj.exe
+C:\Users\to123\Downloads\DBP_Messenger (3)\obj\Debug\on_off_proj.pdb
+C:\Users\SSL\Downloads\DBP_Messenger\bin\Debug\on_off_proj.exe.config
+C:\Users\SSL\Downloads\DBP_Messenger\bin\Debug\on_off_proj.exe
+C:\Users\SSL\Downloads\DBP_Messenger\bin\Debug\on_off_proj.pdb
+C:\Users\SSL\Downloads\DBP_Messenger\bin\Debug\Tulpep.NotificationWindow.dll
+C:\Users\SSL\Downloads\DBP_Messenger\obj\Debug\on_off_proj.csproj.AssemblyReference.cache
+C:\Users\SSL\Downloads\DBP_Messenger\obj\Debug\on_off_proj.address.resources
+C:\Users\SSL\Downloads\DBP_Messenger\obj\Debug\on_off_proj.add_FriendForm.resources
+C:\Users\SSL\Downloads\DBP_Messenger\obj\Debug\on_off_proj.bgcForm.resources
+C:\Users\SSL\Downloads\DBP_Messenger\obj\Debug\on_off_proj.changeData.resources
+C:\Users\SSL\Downloads\DBP_Messenger\obj\Debug\on_off_proj.changeMemInfo.resources
+C:\Users\SSL\Downloads\DBP_Messenger\obj\Debug\on_off_proj.ChatItems.inCommImo.resources
+C:\Users\SSL\Downloads\DBP_Messenger\obj\Debug\on_off_proj.ChatItems.inComming.resources
+C:\Users\SSL\Downloads\DBP_Messenger\obj\Debug\on_off_proj.ChatItems.outGoImo.resources
+C:\Users\SSL\Downloads\DBP_Messenger\obj\Debug\on_off_proj.ChatItems.outGoing.resources
+C:\Users\SSL\Downloads\DBP_Messenger\obj\Debug\on_off_proj.ChatList.resources
+C:\Users\SSL\Downloads\DBP_Messenger\obj\Debug\on_off_proj.chattingRoom.resources
+C:\Users\SSL\Downloads\DBP_Messenger\obj\Debug\on_off_proj.delete_FriendForm.resources
+C:\Users\SSL\Downloads\DBP_Messenger\obj\Debug\on_off_proj.FriendList.resources
+C:\Users\SSL\Downloads\DBP_Messenger\obj\Debug\on_off_proj.UserControl1.resources
+C:\Users\SSL\Downloads\DBP_Messenger\obj\Debug\on_off_proj.emojiForm.resources
+C:\Users\SSL\Downloads\DBP_Messenger\obj\Debug\on_off_proj.insert_FriendForm.resources
+C:\Users\SSL\Downloads\DBP_Messenger\obj\Debug\on_off_proj.Properties.Resources.resources
+C:\Users\SSL\Downloads\DBP_Messenger\obj\Debug\on_off_proj.recommend_Friend.resources
+C:\Users\SSL\Downloads\DBP_Messenger\obj\Debug\on_off_proj.saveFile.resources
+C:\Users\SSL\Downloads\DBP_Messenger\obj\Debug\on_off_proj.signIn.resources
+C:\Users\SSL\Downloads\DBP_Messenger\obj\Debug\on_off_proj.sign_up.resources
+C:\Users\SSL\Downloads\DBP_Messenger\obj\Debug\on_off_proj.csproj.GenerateResource.cache
+C:\Users\SSL\Downloads\DBP_Messenger\obj\Debug\on_off_proj.csproj.CoreCompileInputs.cache
+C:\Users\SSL\Downloads\DBP_Messenger\obj\Debug\on_off_proj.csproj.CopyComplete
+C:\Users\SSL\Downloads\DBP_Messenger\obj\Debug\on_off_proj.exe
+C:\Users\SSL\Downloads\DBP_Messenger\obj\Debug\on_off_proj.pdb
